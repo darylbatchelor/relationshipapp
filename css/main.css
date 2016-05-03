@@ -1,0 +1,278 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*-- navbar styles --*/
+.color-scheme{
+	background-color: #ff4081;
+	/* for male background-color:#304ffe;*/
+background-image: linear-gradient(to top,#304ffe 0,#304ffe 100%);
+	/*background-image: linear-gradient(to top,#ff4081 0,#ff4081 100%);*/
+}
+
+
+#navbar{
+
+text-align: center;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border: none;
+}
+.navbar{
+	border-bottom: none;
+}
+
+.navbar-nav{
+margin-top: 0 !important;
+
+}
+
+.navbar-toggle{
+border: none;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background-color: rgba(0,0,0,0);
+}
+
+
+
+nav li a{
+	text-shadow: none !important;
+	color: #333 !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+
+	color: #f4f4f4 !important;
+
+
+}
+
+.navbar-nav hr{
+background-color:#868585 !important;
+margin-top: 10px !important;
+margin-bottom: 10px !important;
+
+}
+
+span.nav-title{
+	position:absolute;
+	color: #f4f4f4;
+	top:-13px;
+	left:5px;
+}
+
+@media (min-width: 768px){
+	.navbar-nav hr{
+	display: none;
+
+	}
+	#navbar{
+	
+	text-align: center;
+	}
+}
+
+
+
+/*-- Jumbotron --*/
+
+
+.jumbotron{
+	
+	text-align: center;
+	padding: 10px 10px;
+	margin-bottom:0;
+
+}
+
+.jumbotron img{
+	position: relative;
+	top:0;
+	
+/* -- need to adjust the position once final image has been chosen - current img too small */
+}
+
+/* -- tab under menu --*/
+.tab-parent{
+	position:relative;
+}
+.tab-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 5px solid rgba(254, 254,254, 0.5);
+  display:none;
+}
+a.tab{
+
+    line-height: 20px;
+    color: #f4f4f4;
+    margin-bottom:10px;
+    position: relative;
+    display: block;
+    padding: 0px 15px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.tab-active{
+display:block;
+}
+
+
+/* -- counter - currently an image, but need to become js counter --*/
+
+.counter{
+	text-align: center;
+}
+
+.main-content-area{
+	text-align: center;
+}
+
+.main-content-area-subpages{
+	text-align: left;
+}
+
+/* -- points --*/
+
+span.heartplain{
+background-image: url('../img/hearts_plain.png');
+    background-repeat: no-repeat;
+    height: 37px;
+    width: 37px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-left:5%;
+    margin-right:5%;
+
+}
+
+.hearts-col{
+    padding-top:58px;
+}
+
+.heart-form{
+	width:70%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+input.heart{
+	padding-left: 10px;
+}
+
+input#one-point[type=radio] {
+    display:none;
+}
+
+input#one-point[type=radio] + label {
+    background-image: url('../img/hearts_01.png');
+    background-repeat: no-repeat;
+    height: 37px;
+    width: 37px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+input#one-point[type=radio]:checked + label {
+    background-image: url('../img/heartschecked_01.png');
+    background-repeat: no-repeat;
+    height: 37px;
+    width: 37px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+input#two-point[type=radio] {
+    display:none;
+}
+
+input#two-point[type=radio] + label {
+    background-image: url('../img/hearts_02.png');
+    background-repeat: no-repeat;
+    height: 39px;
+    width: 44px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+input#two-point[type=radio]:checked + label {
+    background-image: url('../img/heartschecked_02.png');
+    background-repeat: no-repeat;
+    height: 39px;
+    width: 44px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+input#three-point[type=radio] {
+    display:none;
+}
+
+input#three-point[type=radio] + label {
+    background-image: url('../img/hearts_03.png');
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 54px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+input#three-point[type=radio]:checked + label {
+    background-image: url('../img/heartschecked_03.png');
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 54px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+        margin-left:5%;
+    margin-right:5%;
+}
+
+.point-ideas input{
+    
+    margin-left: 10%;
+}
+
+.point-ideas input:first-child{
+    
+    margin-left: 0;
+}
+
+/* -- favour --*/
+.favour-label{
+    padding-left: 30px;
+}
+.is-countdown{
+border: none;
+background-color: rgba(0,0,0,0);
+
+}
+
+/* footer --*/
+ footer{
+ 	text-align: center;
+ }
+
+
+
+
+
